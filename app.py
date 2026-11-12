@@ -2,13 +2,13 @@ import streamlit as st
 from rag_engine import OpenSourceRAGTutor, STYLE_PROMPTS
 
 st.set_page_config(
-    page_title="Smart Subject Tutor v1.0 (Open-Source RAG)",
+    page_title="Smart Subject Tutor",
     page_icon="🎓",
     layout="wide",
 )
 
 
-@st.cache_resource(show_spinner="Loading Open-Source Embedding & LLM Models (Zero API Keys)...")
+@st.cache_resource(show_spinner="Just Sit Back and Relax, your tutor is getting ready")
 def load_tutor_engine() -> OpenSourceRAGTutor:
     return OpenSourceRAGTutor(notes_path="data/subject_notes.md")
 
