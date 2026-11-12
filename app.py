@@ -2,7 +2,7 @@ import streamlit as st
 from rag_engine import OpenSourceRAGTutor, STYLE_PROMPTS
 
 st.set_page_config(
-    page_title="Smart Subject Tutor",
+    page_title="Smart Subject Tutor V1",
     page_icon="🎓",
     layout="wide",
 )
